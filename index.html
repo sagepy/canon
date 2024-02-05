@@ -2,31 +2,70 @@
 <html>
 <head>
 <title>WEB</title>
+<style>
+    body {
+        margin: 0;
+    }
+    a {
+        color:black;
+        text-decoration: none;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding: 20px;
+    
+    }
+    #id {
+        color: gray;
+    }
+    ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 50px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #article{
+        padding-left:70px;
+    }
+  
+</style>
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-
-    <h2>WEB</h2>
-    <p>
-        개념
-        
-        <ul>DB 조회나 로직 처리를 요구하는 동적 컨텐츠를 제공하기 위해 만들어진<br>
-        Application Server
-        Web container 혹은 Servlet Container라고도 불린다.<br>
-        Container란 jsp, Servlet을 실행시킬 수 있는 소프트웨어를 말한다.
-        </ul>
-
-        기능
-        
-        <ul>프로그램 실행 환경과 DB 접속 기능 제공<br>
-        여러 개의 트랜잭션 관리기능<br>
-        업무 처리하는 비즈니스 로직수행<br>
-        Tomcat, Websphere, Weblogic, Jeus, JBoss, Resin 등..
-        </ul></p>
+    <h1><a href="index.html">hello WEB</a></h1>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <div id="article">
+        <h2>WEB</h2>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE?si=url41T8PabqAfIpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+        <p>
+            개념
+            
+            <ul>DB 조회나 로직 처리를 요구하는 동적 컨텐츠를 제공하기 위해 만들어진<br>
+            Application Server
+            Web container 혹은 Servlet Container라고도 불린다.<br>
+            Container란 jsp, Servlet을 실행시킬 수 있는 소프트웨어를 말한다.
+            </ul>
+    
+            기능
+            
+            <ul>프로그램 실행 환경과 DB 접속 기능 제공<br>
+            여러 개의 트랜잭션 관리기능<br>
+            업무 처리하는 비즈니스 로직수행<br>
+            Tomcat, Websphere, Weblogic, Jeus, JBoss, Resin 등..
+            </ul></p>
+        </div>
+    </div>
 </body>
 </html>
